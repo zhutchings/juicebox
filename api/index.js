@@ -40,9 +40,9 @@ apiRouter.use((req, res, next) => {
     }
   
     next();
-  });
+});
 
-  
+
 
 
 const usersRouter = require('./users');
@@ -60,8 +60,9 @@ apiRouter.use((error, req, res, next) => {
       name: error.name,
       message: error.message
     });
-  });
-  
+});
+
+
 
 
 module.exports = apiRouter;
